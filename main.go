@@ -1,14 +1,14 @@
 package main
 
 import (
-	// "./database"
-	"go-lang-react/routes"
+		"go-lang-react/routes"
+		"go-lang-react/database"
 
 	"github.com/gofiber/fiber/v2"
 )
 
 func main() {
-	// database.Connect()
+	database.Connect()
 	app := fiber.New()
 	routes.StartApplication(app)
 	app.Listen(":8000")
