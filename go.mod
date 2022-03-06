@@ -1,4 +1,4 @@
-module github.com/winsongr/go-lang-react
+module go-lang-react
 
 go 1.17
 

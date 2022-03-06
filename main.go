@@ -2,8 +2,9 @@ package main
 
 import (
 	// "./database"
+	"go-lang-react/routes"
+
 	"github.com/gofiber/fiber/v2"
-	"github.com/winsongr/go-lang-react/routes"
 )
 
 func main() {
