@@ -8,5 +8,5 @@ import (
 
 func StartApplication(app *fiber.App) {
 	app.Post("/register", controllers.Register)
-
+	app.Post("/login", controllers.Login)
 }

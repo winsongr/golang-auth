@@ -7,10 +7,14 @@ import (
 	"gorm.io/gorm"
 )
 
+var DB *gorm.DB
+
 func Connect() {
+
 	connection, err := gorm.Open(mysql.Open("root:root@123@/goreact"), &gorm.Config{})
 	if err != nil {
 		panic("db failed to connect")
 	}
-	connection.AutoMigrate(models.User{})
+	DB = connection
+	connection.AutoMigrate(&models.User{})
 }
