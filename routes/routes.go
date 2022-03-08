@@ -11,4 +11,6 @@ func StartApplication(app *fiber.App) {
 	app.Post("/login", controllers.Login)
 	app.Get("/user", controllers.User)
 	app.Post("/logout", controllers.Logout)
+	app.Post("/forgot",controllers.Forgot)
+	app.Post("/reset",controllers.Reset)
 }
